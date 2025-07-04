@@ -1,7 +1,7 @@
 import express from "express";
 import apiRouter from "./routes/apiRouter.js";
 import cors from "cors";
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 /*
 The user can filter by the following properties: industry, country, continent, is_seeking_funding, has_mvp 
